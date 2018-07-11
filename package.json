@@ -1,0 +1,32 @@
+{
+  "name": "karetao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ryan Williams <hello@ryan.nz>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "jest": "^23.4.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "rootDir": "src",
+    "testRegex": "\\.test\\.[jt]s$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/build/",
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  }
+}
