@@ -1,5 +1,6 @@
 import { Point } from './geom';
 import Arena from './arena';
+import { scriptCommand } from './commands';
 
 export enum Direction {
   North = 'NORTH',
@@ -12,9 +13,6 @@ export default class Robot {
   public arena: Arena | null = null;
   private _position: Point | null = null;
   private _direction: Direction | null = null;
-
-  constructor() {
-  }
 
   get x(): number | null {
     if (!this._position) return null;
@@ -34,7 +32,7 @@ export default class Robot {
     this._position = value;
   }
 
-  get direction() {
+  get direction(): Direction | null {
     return this._direction;
   }
 
@@ -42,6 +40,10 @@ export default class Robot {
     this._direction = value;
   }
 
+  /**
+   * Execute a series of instructions
+   */
   execute(instructions: string) {
+    scriptCommand(this, instructions);
   }
 }
