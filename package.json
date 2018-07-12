@@ -7,7 +7,8 @@
     "karetao": "build/index.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "Ryan Williams <hello@ryan.nz>",
   "license": "MIT",
