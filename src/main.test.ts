@@ -1,5 +1,4 @@
 import { Readable } from 'stream';
-import * as util from 'util';
 import main from './main';
 import mockCli = require('mock-cli');
 
