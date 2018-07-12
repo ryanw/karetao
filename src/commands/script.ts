@@ -25,6 +25,6 @@ export default function (robot: Robot, instructions: string) {
       arg = tokens[++i];
     }
 
-    command(robot, arg)
+    command(robot, arg);
   }
 }

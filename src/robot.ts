@@ -4,9 +4,9 @@ import { scriptCommand } from './commands';
 
 export enum Direction {
   North = 'NORTH',
+  East  = 'EAST',
   South = 'SOUTH',
-  East = 'EAST',
-  West = 'WEST',
+  West  = 'WEST',
 }
 
 export default class Robot {
