@@ -26,6 +26,8 @@ it('executes commands', () => {
   expect(robot.x).toBe(3);
   expect(robot.y).toBe(1);
   expect(logSpy).toBeCalledWith('3,1,EAST');
+
+  logSpy.mockRestore();
 });
 
 

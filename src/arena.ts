@@ -12,6 +12,10 @@ export default class Arena {
     this._size = { width, height };
   }
 
+  get robots(): Array<Robot> {
+    return this._robots;
+  }
+
   get width() {
     return this._size.width;
   }
@@ -22,5 +26,6 @@ export default class Arena {
 
   addRobot(robot: Robot) {
     this._robots.push(robot);
+    robot.arena = this;
   }
 }

@@ -1,4 +1,5 @@
 import Arena from './arena';
+import Robot from './robot';
 
 it('initialises with a default size', () => {
   const arena = new Arena();
@@ -24,4 +25,13 @@ it('does not allow negative sizes', () => {
   expect(() => {
     const arena = new Arena(-12, -45);
   }).toThrow();
+});
+
+it('adds a robot', () => {
+  const arena = new Arena(12, 45);
+  const robot = new Robot();
+  arena.addRobot(robot);
+  expect(arena.robots.length).toBe(1);
+  expect(arena.robots[0]).toBe(robot);
+  expect(robot.arena).toBe(arena);
 });

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
+  "bin": {
+    "karetao": "build/index.js"
+  },
   "scripts": {
     "test": "jest"
   },
@@ -12,6 +15,7 @@
     "@types/jest": "^23.1.5",
     "@types/node": "^10.5.2",
     "jest": "^23.4.0",
+    "mock-cli": "^0.1.2",
     "ts-jest": "^23.0.0",
     "typescript": "^2.9.2"
   },
