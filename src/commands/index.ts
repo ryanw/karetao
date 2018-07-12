@@ -1,3 +1,4 @@
+import Command from './command';
 import scriptCommand from './script';
 import placeCommand from './place';
 import moveCommand from './move';

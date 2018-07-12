@@ -1,7 +1,7 @@
 import Robot, { Direction } from './robot';
 import Arena from './arena';
 
-let robot;
+let robot: Robot;
 beforeEach(() => {
   robot = new Robot();
   robot.arena = new Arena(5, 5);

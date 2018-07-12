@@ -25,10 +25,10 @@ export default class Robot {
   }
 
   get position(): Point | null {
-    this._position;
+    return this._position;
   }
 
-  set position(value: Point) {
+  set position(value: Point | null) {
     this._position = value;
   }
 
@@ -36,7 +36,7 @@ export default class Robot {
     return this._direction;
   }
 
-  set direction(value: Direction) {
+  set direction(value: Direction | null) {
     this._direction = value;
   }
 

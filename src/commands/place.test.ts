@@ -2,7 +2,7 @@ import placeCommand from './place';
 import Arena from '../arena';
 import Robot, { Direction } from '../robot';
 
-let robot;
+let robot: Robot;
 beforeEach(() => {
   robot = new Robot();
   robot.arena = new Arena(5, 5);
