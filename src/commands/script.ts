@@ -15,7 +15,7 @@ const COMMAND_MAP: { [key: string]: Command } = {
 };
 
 export default function (robot: Robot, instructions: string) {
-  const tokens: Array<string> = instructions.toUpperCase().split(/\s+/);
+  const tokens: Array<string> = instructions.replace(/^\s+|\s+$/g, '').toUpperCase().split(/\s+/);
   for (let i: number = 0; i < tokens.length; i++) {
     let arg: string | null = null;
     const commandName: string = tokens[i];
